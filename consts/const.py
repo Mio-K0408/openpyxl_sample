@@ -1,6 +1,6 @@
 from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
 # レイアウト指定用の変数
-INPUT_LAYPUT = [1,2,1,2,2,3]
+INPUT_LAYPUT = [1,2,1,5,2,3]
 
 # 1項目の行数
 ITEM_ROW = 10
@@ -13,7 +13,7 @@ START_COLUMN = 1
 CELL_FILL_COLOR = PatternFill(fgColor='B2DDF0', fill_type='solid')
 
 # 罫線（黒）
-black_thin = Side(color='000000', border_style='thin')
+BLACK_THIN = Side(color='000000', border_style='thin')
 
 # フォント名
 FONT_NAME = 'Meiryo UI'
