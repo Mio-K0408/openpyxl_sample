@@ -8,6 +8,15 @@ from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
 current_row = const.START_ROW
 current_column = const.START_COLUMN
 
+# エクセル保存先のフォルダ
+create_folder = os.path.join(os.getcwd(),'create')
+if os.path.exists(create_folder):
+    # フォルダが既にあればスキップ
+    pass
+else:
+    # フォルダがなかったら作成
+    os.mkdir(create_folder)
+
 # エクセルの保存先
 create_file = os.path.join(os.getcwd(),'create','test.xlsx')
 print(create_file)
